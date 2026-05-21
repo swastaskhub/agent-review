@@ -36,7 +36,7 @@ header p {
 }
 
 .card {
-  width: 300px;
+  width: 250px;
   padding: 25px;
   border-radius: 14px;
   text-align: center;
@@ -52,9 +52,21 @@ header p {
   background: linear-gradient(135deg, #4caf50, #2e7d32);
 }
 
+.tasks {
+  background: linear-gradient(135deg, #2196f3, #0d47a1);
+}
+
+.referrals {
+  background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+}
+
+.pending {
+  background: linear-gradient(135deg, #f44336, #b71c1c);
+}
+
 .card h2 {
   margin-bottom: 12px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .count {
@@ -80,7 +92,8 @@ thead {
   color: white;
 }
 
-th, td {
+th,
+td {
   padding: 16px;
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -95,6 +108,7 @@ td {
 }
 
 @media (max-width: 768px) {
+
   header h1 {
     font-size: 28px;
   }
@@ -103,8 +117,10 @@ td {
     width: 100%;
   }
 
-  th, td {
+  th,
+  td {
     padding: 12px;
     font-size: 14px;
   }
+
 }
