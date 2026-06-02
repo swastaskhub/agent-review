@@ -4,142 +4,275 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agent Reviews Scheme</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #222;
+      padding: 30px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #1f3c88;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .summary {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 250px;
+      padding: 25px;
+      border-radius: 14px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .verification {
+      background: linear-gradient(135deg, #ff9800, #ff5722);
+    }
+
+    .premium {
+      background: linear-gradient(135deg, #4caf50, #2e7d32);
+    }
+
+    .tasks {
+      background: linear-gradient(135deg, #2196f3, #0d47a1);
+    }
+
+    .referrals {
+      background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+    }
+
+    .pending {
+      background: linear-gradient(135deg, #f44336, #b71c1c);
+    }
+
+    .card h2 {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .count {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .table-section {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    thead {
+      background: #1f3c88;
+      color: white;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:hover {
+      background: #f0f4ff;
+      transition: 0.3s;
+    }
+
+    td {
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      th, td {
+        padding: 12px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>Agent Reviews Scheme Dashboard</h1>
-    <p>Official Contact: tyvonneyobi1122@gmail.com</p>
-  </header>
+<header>
+  <h1>Agent Reviews Scheme Dashboard</h1>
+  <p>Official Contact: tyvonneyobi1122@gmail.com</p>
+</header>
 
-  <section class="summary">
+<section class="summary">
 
-    <div class="card verification">
-      <h2>Verification Fee Paid</h2>
-      <p class="count">21 Clients</p>
-    </div>
+  <div class="card verification">
+    <h2>Verification Fee Paid</h2>
+    <p class="count">25 Clients</p>
+  </div>
 
-    <div class="card premium">
-      <h2>Premium Paid</h2>
-      <p class="count">13 Clients</p>
-    </div>
+  <div class="card premium">
+    <h2>Premium Paid</h2>
+    <p class="count">14 Clients</p>
+  </div>
 
-    <div class="card tasks">
-      <h2>Withdraw From Tasks</h2>
-      <p class="count">1 Client</p>
-    </div>
+  <div class="card tasks">
+    <h2>Withdraw From Tasks</h2>
+    <p class="count">1 Client</p>
+  </div>
 
-    <div class="card referrals">
-      <h2>Withdraw From Referrals</h2>
-      <p class="count">12 Clients</p>
-    </div>
+  <div class="card referrals">
+    <h2>Withdraw From Referrals</h2>
+    <p class="count">19 Clients</p>
+  </div>
 
-    <div class="card pending">
-      <h2>Pending Withdrawal</h2>
-      <p class="count">KES 10,781</p>
-    </div>
+  <div class="card pending">
+    <h2>Pending Withdrawal</h2>
+    <p class="count">KES 18,651</p>
+  </div>
 
-  </section>
+</section>
 
-  <section class="table-section">
-    <table>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Agent Name</th>
-          <th>Verified Clients</th>
-          <th>Referral Column</th>
-          <th>Payment Column</th>
-          <th>Premium Users</th>
-          <th>Withdraw From Tasks</th>
-          <th>Withdraw From Referrals</th>
-        </tr>
-      </thead>
+<section class="table-section">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Agent Name</th>
+        <th>Verified Clients</th>
+        <th>Referral Column</th>
+        <th>Payment Column</th>
+        <th>Premium Users</th>
+        <th>Withdraw From Tasks</th>
+        <th>Withdraw From Referrals</th>
+      </tr>
+    </thead>
 
-      <tbody>
+    <tbody>
 
-        <tr>
-          <td>1</td>
-          <td>Agent Brian</td>
-          <td>95 Clients</td>
-          <td>41 Referrals</td>
-          <td>KES 18,800</td>
-          <td>77 Users</td>
-          <td>55 Users</td>
-          <td>53 Users</td>
-        </tr>
+      <tr>
+        <td>1</td>
+        <td>Agent Brian</td>
+        <td>105 Clients</td>
+        <td>46 Referrals</td>
+        <td>KES 22,500</td>
+        <td>87 Users</td>
+        <td>75 Users</td>
+        <td>73 Users</td>
+      </tr>
 
-        <tr>
-          <td>2</td>
-          <td>Agent Lydia</td>
-          <td>91 Clients</td>
-          <td>39 Referrals</td>
-          <td>KES 17,900</td>
-          <td>73 Users</td>
-          <td>52 Users</td>
-          <td>51 Users</td>
-        </tr>
+      <tr>
+        <td>2</td>
+        <td>Agent Lydia</td>
+        <td>101 Clients</td>
+        <td>44 Referrals</td>
+        <td>KES 21,800</td>
+        <td>83 Users</td>
+        <td>71 Users</td>
+        <td>70 Users</td>
+      </tr>
 
-        <tr>
-          <td>3</td>
-          <td>Agent Kevin</td>
-          <td>88 Clients</td>
-          <td>37 Referrals</td>
-          <td>KES 17,300</td>
-          <td>69 Users</td>
-          <td>49 Users</td>
-          <td>49 Users</td>
-        </tr>
+      <tr>
+        <td>3</td>
+        <td>Agent Kevin</td>
+        <td>97 Clients</td>
+        <td>42 Referrals</td>
+        <td>KES 20,900</td>
+        <td>78 Users</td>
+        <td>68 Users</td>
+        <td>67 Users</td>
+      </tr>
 
-        <tr>
-          <td>4</td>
-          <td>Agent Diana</td>
-          <td>84 Clients</td>
-          <td>35 Referrals</td>
-          <td>KES 16,700</td>
-          <td>65 Users</td>
-          <td>47 Users</td>
-          <td>47 Users</td>
-        </tr>
+      <tr>
+        <td>4</td>
+        <td>Agent Diana</td>
+        <td>92 Clients</td>
+        <td>40 Referrals</td>
+        <td>KES 19,800</td>
+        <td>73 Users</td>
+        <td>63 Users</td>
+        <td>63 Users</td>
+      </tr>
 
-        <tr>
-          <td>5</td>
-          <td>Agent Mercy</td>
-          <td>79 Clients</td>
-          <td>33 Referrals</td>
-          <td>KES 15,950</td>
-          <td>61 Users</td>
-          <td>44 Users</td>
-          <td>45 Users</td>
-        </tr>
+      <tr>
+        <td>5</td>
+        <td>Agent Mercy</td>
+        <td>87 Clients</td>
+        <td>38 Referrals</td>
+        <td>KES 18,700</td>
+        <td>68 Users</td>
+        <td>58 Users</td>
+        <td>59 Users</td>
+      </tr>
 
-        <tr>
-          <td>6</td>
-          <td>Agent Victor</td>
-          <td>71 Clients</td>
-          <td>31 Referrals</td>
-          <td>KES 15,200</td>
-          <td>54 Users</td>
-          <td>41 Users</td>
-          <td>43 Users</td>
-        </tr>
+      <tr>
+        <td>6</td>
+        <td>Agent Victor</td>
+        <td>81 Clients</td>
+        <td>36 Referrals</td>
+        <td>KES 17,900</td>
+        <td>61 Users</td>
+        <td>53 Users</td>
+        <td>55 Users</td>
+      </tr>
 
-        <tr>
-          <td>7</td>
-          <td>Agent Sarah</td>
-          <td>64 Clients</td>
-          <td>29 Referrals</td>
-          <td>KES 14,600</td>
-          <td>48 Users</td>
-          <td>39 Users</td>
-          <td>42 Users</td>
-        </tr>
+      <tr>
+        <td>7</td>
+        <td>Agent Sarah</td>
+        <td>74 Clients</td>
+        <td>34 Referrals</td>
+        <td>KES 17,100</td>
+        <td>54 Users</td>
+        <td>49 Users</td>
+        <td>52 Users</td>
+      </tr>
 
-      </tbody>
-    </table>
-  </section>
+    </tbody>
+  </table>
+</section>
 
 </body>
-</html>
 </html>
